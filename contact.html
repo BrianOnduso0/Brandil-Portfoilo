@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Kindly Contact for Enquiries</a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="tables.html">Tables</a>
+            
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="b29b4af9-d1da-45bc-9439-b051ae471257">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="text" name="subject" placeholder="Subject" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit" class="contact-btn">Submit</button>
+        </form>
+    </div>  
+
+    
+</body>
+</html>

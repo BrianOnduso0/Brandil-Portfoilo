@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    background: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo:hover,
+.logo{
+    color: blue;
+}
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:lightcoral;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    transition: 3s;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: blue;
+}
+
+.home {
+    height: 100vh;
+    background: url('Images/hands.webp') no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h1:hover,
+.home-content h1:active{
+    color: white;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.home-content h3:hover,
+.home-content h3:active{
+    color: gold;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p:active,
+.home-content p:hover {
+    color: white;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+.About {
+    height: 120vh;
+    background: url('Images/road.webp') no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: black;
+}
+
+.About-content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.About-content h1:hover,
+.About-content h1:active{
+    color: red;
+}
+
+.About-content p {
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
+
+.About-content p:hover,
+.About-content p:active{
+    color: red;
+}
+
+.About-content ul {
+    list-style:inside;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.About-content ul:hover,
+.About-content ul:active{
+    color: gold;
+}
+
+.Services {
+    height: 100vh;
+    background: url('Images/knowledge.webp') no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: black;
+}
+
+.Services-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.Services-content h1:hover,
+.Services-content h1:active{
+    color: red;
+}
+
+.Services-content p {
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
+.Services-content p:hover,
+.Services-content p:active{
+    color: red;
+}
+
+.Services-content ul {
+    list-style:inside;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.Services-content ul:hover,
+.Services-content ul:active{
+    color: gold;
+}
+
+.contact-container{
+    height: 120vh;
+    margin-top: 69px;
+    justify-content: space-evenly;
+}
+
+.contact-container h2:hover,
+.contact-container h2:active {
+    color: red;
+}
+
+.contact-left {
+    height: 100vh;
+    background: url('Images/contacts.webp') no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    padding: 0 10%;
+    color: black;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact.left-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: blue;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid red;
+}
+
+.contact-inputs:placeholder {
+    color: red;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: brown;    
+}
+
+.Project {
+    height: 100vh;
+    background: url('Images/man.webp') no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.Project h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: brown;
+}
+
+.Project h1:hover,
+.Project h1:active{
+    color: darkorchid;
+}
+
+.Project-content:hover,
+.Project-content :active{
+    color: gold;
+}
+
+.Tables {
+    height: 100vh;
+    font-weight: 700px;
+    background: url('Images/laptop.webp') no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.Tables {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.tableone,
+.tabletwo {
+    border-collapse: collapse; 
+    width: 45%; 
+}
+
+.tableone th,
+.tableone td,
+.tabletwo th,
+.tabletwo td {
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left; 
+    background-color: blue; 
+}
+
+
+.tableone th,
+.tabletwo th {
+    background-color: black; 
+}
+
+.tableone:hover,
+.tableone:active{
+    color: red;
+}
+
+
+.tabletwo:hover,
+.tabletwo:active{
+    color: red;
+}
